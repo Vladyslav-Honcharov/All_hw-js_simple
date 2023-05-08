@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banners</title>
+    <style>
+      .image-to-show {
+        width: 500px;
+        object-fit: fill;
+        display: none;
+      }
+
+      .images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .show {
+        display: block;
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
+
+      .buttons {
+        display: flex;
+        padding: 15px 75px;
+        font-size: 20px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="images-wrapper">
+      <img src="./img/1.jpg" alt="image of game" class="image-to-show" />
+      <img src="./img/2.jpg" alt="image of game" class="image-to-show" />
+      <img src="./img/3.JPG" alt="image of game" class="image-to-show" />
+      <img src="./img/4.png" alt="image of game" class="image-to-show" />
+    </div>
+    <div class="buttons">
+      <button class="btn_stop">Припинити</button>
+      <button class="btn_run">Відновити показ</button>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

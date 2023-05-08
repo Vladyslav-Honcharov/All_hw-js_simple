@@ -1,0 +1,19 @@
+{
+  "name": "my-first-npm-project",
+  "version": "1.0.0",
+  "description": "First project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Vlad",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.3"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.3"
+  }
+}

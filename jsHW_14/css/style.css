@@ -1,0 +1,305 @@
+@import url(/css/nullstyle.css);
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* light */
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.wrapper {
+  background: url(/img/BG.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+.header {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 58px;
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+.header a {
+  color: #ffffff;
+}
+.header a:hover {
+  color: #3cb878;
+}
+.header:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header_logo {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+.header_info {
+  display: flex;
+}
+.header_icons {
+  display: flex;
+  padding-right: 53px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header_icons_calendar {
+  background-color: #01813f;
+  width: 24px;
+  height: 24px;
+  z-index: 5;
+}
+
+.header_icon {
+  opacity: 1;
+  padding-right: 24px;
+}
+
+.header_icon svg:hover path {
+  fill: #01813f;
+}
+
+.header_login::before {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.9);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 1px;
+  height: 19px;
+  left: -30px;
+  top: 3px;
+}
+.header_login {
+  padding-top: 5px;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+.header_login a {
+  color: #ffffff;
+}
+.main {
+  margin: 0 auto;
+  margin-top: 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.52);
+  align-items: center;
+  width: 444px;
+  height: 584px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 325px;
+}
+.title {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title_singup {
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #434343;
+}
+.title_singup::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -59.5px;
+  top: 0px;
+  background: #3cb878;
+}
+.title_login {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+.title_login a {
+  color: #3cb878;
+}
+.title_login a:hover {
+  color: #01813f;
+  text-decoration: underline;
+}
+.social {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.social_fb {
+  background: #305db8;
+  width: 160px;
+  height: 48px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social_fb:hover {
+  background: #022263;
+}
+.social_fb_logo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 25px;
+}
+.social_fb_text {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  padding-bottom: 2px;
+}
+.social_fb_text::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 28px;
+  left: -18px;
+  top: -5px;
+  background: #0a162f;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+}
+.social_google {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  width: 160px;
+  height: 48px;
+  background: #df4a32;
+}
+.social_google:hover {
+  background: #ab1f09;
+}
+.social_google_logo {
+  padding-top: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 25px;
+}
+.social_google_text {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  padding-bottom: 2px;
+}
+.social_google_text::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 28px;
+  left: -30px;
+  top: -5px;
+  background: #0a162f;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+}
+.or {
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.or::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 8px;
+  padding-right: 10px;
+  border: 1px solid #f2f2f2;
+  width: 152px;
+  height: 1px;
+}
+.or::before {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 8px;
+  padding-right: 10px;
+  border: 1px solid #f2f2f2;
+  width: 152px;
+  height: 1px;
+}
+
+.field {
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  width: 322px;
+  height: 44.08px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+.field:focus {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.21);
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.0001);
+  border: 1px solid #f2f2f2;
+  margin-bottom: 20px;
+  position: relative;
+}
+.btn {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  background: rgba(60, 184, 120, 0.8);
+  border-radius: 4px;
+  width: 324px;
+  height: 46px;
+  padding-top: 16px;
+}
+.btn:hover {
+  background: #01813f;
+}
+.checkbox_text {
+  position: absolute;
+  padding-top: 3px;
+  padding-left: 10px;
+  width: 241px;
+  height: 20px;
+  align-items: center;
+}
+.checkbox_text a {
+  color: #3cb878;
+}
+.checkbox_text a:hover {
+  color: #01813f;
+  text-decoration: underline;
+}
+input[type="checkbox"]:checked + label span {
+  content: "\2713";
+}
+*:hover {
+  transition-duration: 1.2s;
+}
+
+.btn_theme {
+  margin-left: 250px;
+  border: 5px solid rgb(27, 28, 82);
+  background-color: #df4a32;
+  color: floralwhite;
+  width: 150px;
+  height: 50px;
+}
+/* Dark */
